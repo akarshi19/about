@@ -1,0 +1,161 @@
+
+body{
+	background-color: black;
+}
+.head-title{
+	text-align: center;
+  margin-top: 13px;
+  background-color: black;
+  
+}
+
+.head-title h1{
+	text-align: center;
+	padding: 5px 80px;
+	color: #e59948;
+	border-radius: 10px;
+	display: inline;
+	border: 3px solid #6cc0c4;
+	font-size: 3em;
+	background-color: black;
+}
+
+.timeline{
+	position: relative;
+	max-width: 1200px;
+	margin: 100px auto;
+}
+.checkpoint{
+	padding: 10px 50px;
+	position: relative;
+	width: 50%;
+	animation: movedown 1s linear forwards;	
+	opacity: 0;
+}
+@keyframes movedown {
+	0%{
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.text-box{
+	padding: 20px 10px;
+	background: #000000;
+	position: relative;
+	border-radius: 6px;
+	font-size: 15px;
+	color: aliceblue;
+	border: 2px solid #6cc0c4;
+}
+.left-container{
+	left: -2%;
+	animation:  slideInFromLeft 3s ease forwards;
+
+}
+@keyframes slideInFromLeft {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-100%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+.right-container{
+	left: 50%;
+	animation: slideInFromRight 3s ease forwards;
+}
+@keyframes slideInFromRight {
+	0% {
+	  opacity: 0;
+	  transform: translateX(100%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+.checkpoint:nth-child(1){
+	animation-delay:0s ;
+}
+.checkpoint:nth-child(2){
+	animation-delay:1s ;
+}
+.checkpoint:nth-child(3){
+	animation-delay:2s ;
+}
+.checkpoint:nth-child(4){
+	animation-delay:3s ;
+}
+.checkpoint:nth-child(5){
+	animation-delay:4s ;
+}
+.checkpoint:nth-child(6){
+	animation-delay:5s ;
+} 
+.image1{
+	position: absolute;
+	border-radius: 50%;
+	right: -10%;
+	top: 32px;
+	z-index: 10;
+}
+.right-container .image1{
+	left: -39px;
+}
+
+.timeline::after{
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	background: #6cc0c4;
+	top: 0;
+	left: 50%;
+	margin-left: -3px;
+	z-index: -1;
+	animation: moveline 8s linear forwards;
+}
+@keyframes moveline {
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 100%;
+	}
+}
+
+.text-box h2{
+	font-weight: 600;
+	color: #e59948;
+}
+.left-container-arrow{
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 45px solid #6cc0c4;
+	right: -45px;
+}
+.right-container-arrow{
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 25px solid #6cc0c4;
+	left: -25px;
+}
+
+

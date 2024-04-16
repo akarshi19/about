@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #000000; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding */
+    margin-top: 15px;
+  }
+  
+  .image {
+    margin-left: 10px;
+  }
+  
+  .links {
+    display: inline;
+  }
+  
+  .links ul {
+    list-style: none;
+    margin-left: 750px;
+    font-family: sans-serif;
+    display: inline;
+  }
+  
+  .links ul li {
+    display: inline;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: larger;
+    top: -10px;
+  }
+  
